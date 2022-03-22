@@ -29,7 +29,9 @@ public class BrowserController implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 
-		webView.getEngine().load(getClass().getResource("/hook-theme-master/index.html").toString());
+		String url = getClass().getResource("/hook-theme-master/index.html").toString();
+		System.out.println(url);
+		webView.getEngine().load(url);
 		
 	}
 
