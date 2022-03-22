@@ -17,6 +17,7 @@ public class BrowserApp extends Application {
 		
 		primaryStage.setTitle("BrowserFX");
 		primaryStage.setScene(scene);
+		primaryStage.setMaximized(true);
 		primaryStage.show();
 		
 	}
